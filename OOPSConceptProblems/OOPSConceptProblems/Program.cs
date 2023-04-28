@@ -3,7 +3,7 @@ using System.Security.Principal;
 
 namespace OOPSConceptProblem
 {
-    public class Program : Inheritance
+    public class Program : Abstraction
     {
         public static void Main(string[] args)
         {
@@ -56,13 +56,31 @@ namespace OOPSConceptProblem
 
             //Encapsulation
 
-            Encapsulation num = new Encapsulation();
+            // Encapsulation num = new Encapsulation();
             /* num.SetAccountNum =456855276;
              Console.WriteLine(num.SetAccountNum);*/
 
-            num.setAccount(579876687);
-            Console.WriteLine("Account number : " + num.getAccount());
+            /* num.setAccount(579876687);
+             Console.WriteLine("Account number : " + num.getAccount());*/
 
+            Program program = new Program();
+            Abstraction num = program;
+            num.Sub(7,9);
+            program.Sum(900,90);
+            program.Mul(7,9);
+            program.Div(5, 2);
+
+        }
+       
+
+        public override void Div(int x, int y)
+        {
+            Console.WriteLine(x/y);
+        }
+
+        public override void Mul(int x, int y)
+        {
+            Console.WriteLine(x*y);
         }
     }
 }
