@@ -71,16 +71,16 @@ namespace OOPSConceptProblem
              program.Mul(7,9);
              program.Div(5, 2);
 
-         }
-         public override void Div(int x, int y)
-         {
+           }
+           public override void Div(int x, int y)
+          {
              Console.WriteLine(x/y);
-         }
+          }
 
-         public override void Mul(int x, int y)
-         {
+           public override void Mul(int x, int y)
+          {
              Console.WriteLine(x*y);
-         }*/
+          }*/
 
             //polymorphism
 
@@ -104,10 +104,15 @@ namespace OOPSConceptProblem
              shape = new Circle();
              shape.Draw();*/
 
-            Variables name= new Variables();
-            name.Variablestypes();
-            Console.ReadLine();
-
+            /* Variables name= new Variables();
+             name.Variablestypes();
+             Console.ReadLine();*/
+            Reference obj = new Reference();
+            int value = 9;
+            Console.WriteLine(value);
+            obj.referenceMethod(ref value);
+            Console.WriteLine(value);
+          obj.ReferenceMethod();
         }
     }
 
