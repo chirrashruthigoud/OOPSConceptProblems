@@ -20,7 +20,7 @@ namespace OOPSConceptProblems
         {
             return a + b;
         }
-        public double Add(double a, double b)
+        public double Sum(double a, double b)
         {
             return a + b;
         }

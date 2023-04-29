@@ -1,4 +1,5 @@
 ﻿using OOPSConceptProblems;
+using System.Drawing;
 using System.Security.Principal;
 
 namespace OOPSConceptProblem
@@ -83,11 +84,26 @@ namespace OOPSConceptProblem
 
             //polymorphism
 
-            Polymorphism name = new Polymorphism();
-            name.overloading(7, "shruthi");
-            Console.WriteLine( name.Sum(8, 10));
-            Console.WriteLine( name.Add(97.7, 9));
-            name.Withoutpara();
+            /*  Polymorphism name = new Polymorphism();
+              name.overloading(7, "shruthi");
+              Console.WriteLine( name.Sum(8, 10));
+              Console.WriteLine( name.Add(97.7, 9));
+              name.Withoutpara();*/
+            // Example of method overriding
+
+            Overriding animal = new Overriding();
+            animal.MakeSound();
+            animal.MakeSound();
+
+           Dog dog = new Dog();
+            dog.MakeSound();
+
+            Shape shape = new Shape();
+            shape.Draw();
+
+            shape = new Circle();
+            shape.Draw();
+
         }
     }
 
