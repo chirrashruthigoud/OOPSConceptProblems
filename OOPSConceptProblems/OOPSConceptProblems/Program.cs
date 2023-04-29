@@ -3,7 +3,7 @@ using System.Security.Principal;
 
 namespace OOPSConceptProblem
 {
-    public class Program : Abstraction
+    public class Program 
     {
         public static void Main(string[] args)
         {
@@ -63,24 +63,32 @@ namespace OOPSConceptProblem
             /* num.setAccount(579876687);
              Console.WriteLine("Account number : " + num.getAccount());*/
 
-            Program program = new Program();
-            Abstraction num = program;
-            num.Sub(7,9);
-            program.Sum(900,90);
-            program.Mul(7,9);
-            program.Div(5, 2);
+            /* Program program = new Program();
+             Abstraction num = program;
+             num.Sub(7,9);
+             program.Sum(900,90);
+             program.Mul(7,9);
+             program.Div(5, 2);
 
-        }
-       
+         }
+         public override void Div(int x, int y)
+         {
+             Console.WriteLine(x/y);
+         }
 
-        public override void Div(int x, int y)
-        {
-            Console.WriteLine(x/y);
-        }
+         public override void Mul(int x, int y)
+         {
+             Console.WriteLine(x*y);
+         }*/
 
-        public override void Mul(int x, int y)
-        {
-            Console.WriteLine(x*y);
+            //polymorphism
+
+            Polymorphism name = new Polymorphism();
+            name.overloading(7, "shruthi");
+            Console.WriteLine( name.Sum(8, 10));
+            Console.WriteLine( name.Add(97.7, 9));
+            name.Withoutpara();
         }
     }
+
 }
