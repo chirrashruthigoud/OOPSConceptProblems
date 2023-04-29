@@ -91,18 +91,22 @@ namespace OOPSConceptProblem
               name.Withoutpara();*/
             // Example of method overriding
 
-            Overriding animal = new Overriding();
-            animal.MakeSound();
-            animal.MakeSound();
+            /* Overriding animal = new Overriding();
+             animal.MakeSound();
+             animal.MakeSound();
 
-           Dog dog = new Dog();
-            dog.MakeSound();
+            Dog dog = new Dog();
+             dog.MakeSound();
 
-            Shape shape = new Shape();
-            shape.Draw();
+             Shape shape = new Shape();
+             shape.Draw();
 
-            shape = new Circle();
-            shape.Draw();
+             shape = new Circle();
+             shape.Draw();*/
+
+            Variables name= new Variables();
+            name.Variablestypes();
+            Console.ReadLine();
 
         }
     }

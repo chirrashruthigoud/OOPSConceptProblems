@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OOPSConceptProblems
-{
+{ //method overriding is an approach of re-implementing a parent classes method under
+  //the child class exactly with the same name and signature.
+  //
     public class Overriding
     {
         // Example of method overriding
