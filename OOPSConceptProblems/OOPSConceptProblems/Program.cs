@@ -107,12 +107,19 @@ namespace OOPSConceptProblem
             /* Variables name= new Variables();
              name.Variablestypes();
              Console.ReadLine();*/
-            Reference obj = new Reference();
-            int value = 9;
-            Console.WriteLine(value);
-            obj.referenceMethod(ref value);
-            Console.WriteLine(value);
-          obj.ReferenceMethod();
+            /*  Reference obj = new Reference();
+              int value = 9;
+              Console.WriteLine(value);
+              obj.referenceMethod(ref value);
+              Console.WriteLine(value);
+              obj.ReferenceMethod();*/
+
+            ConstructorTypes obj = new ConstructorTypes();
+            ConstructorTypes obj_one= new ConstructorTypes(3,7);
+            Console.WriteLine( obj.name = "siri");
+            Console.WriteLine( obj.number = 4);
+            obj.number = 1;
+            Console.ReadLine();
         }
     }
 
