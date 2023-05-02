@@ -4,7 +4,7 @@ using System.Security.Principal;
 
 namespace OOPSConceptProblem
 {
-    public class Program
+    public class Program : accessmodifiers
     {
         public static void Main(string[] args)
         {
@@ -71,16 +71,16 @@ namespace OOPSConceptProblem
              program.Mul(7,9);
              program.Div(5, 2);
 
-           }
-           public override void Div(int x, int y)
-          {
+            }
+            public override void Div(int x, int y)
+            {
              Console.WriteLine(x/y);
-          }
+            }
 
-           public override void Mul(int x, int y)
-          {
+            public override void Mul(int x, int y)
+            {
              Console.WriteLine(x*y);
-          }*/
+            }*/
 
             //polymorphism
 
@@ -120,10 +120,14 @@ namespace OOPSConceptProblem
              Console.WriteLine( obj.number = 4);
              Console.ReadLine();*/
 
-            Interface obj = new DogAnimal();
-            Interface obj_one = new Cat();
-            obj.Move();
-            obj_one.Move();
+            /* Interface obj = new DogAnimal();
+             Interface obj_one = new Cat();
+             obj.Move();
+             obj_one.Move();*/
+
+
+            accessmodifiers p = new accessmodifiers();
+            p.test1(); p.test4(); p.test5();
         }
     }
 }
