@@ -4,7 +4,7 @@ using System.Security.Principal;
 
 namespace OOPSConceptProblem
 {
-    public class Program 
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -114,13 +114,16 @@ namespace OOPSConceptProblem
               Console.WriteLine(value);
               obj.ReferenceMethod();*/
 
-            ConstructorTypes obj = new ConstructorTypes();
-            ConstructorTypes obj_one= new ConstructorTypes(3,7);
-            Console.WriteLine( obj.name = "siri");
-            Console.WriteLine( obj.number = 4);
-            obj.number = 1;
-            Console.ReadLine();
+            /* ConstructorTypes obj = new ConstructorTypes();
+             ConstructorTypes obj_one= new ConstructorTypes(3,7);
+             Console.WriteLine( obj.name = "siri");
+             Console.WriteLine( obj.number = 4);
+             Console.ReadLine();*/
+
+            Interface obj = new DogAnimal();
+            Interface obj_one = new Cat();
+            obj.Move();
+            obj_one.Move();
         }
     }
-
 }
